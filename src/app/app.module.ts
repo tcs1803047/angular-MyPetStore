@@ -9,7 +9,6 @@ import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { LoginComponent } from './login/login.component';
-import { MembersComponent } from './members/members.component';
 //
 @NgModule({
   imports:      [
@@ -25,7 +24,8 @@ import { MembersComponent } from './members/members.component';
   declarations: [
     AppComponent,
     HelloComponent, 
-    TopBarComponent, LoginComponent, MembersComponent
+    TopBarComponent,
+    LoginComponent
   ],
   bootstrap:    [ AppComponent ]
 })
