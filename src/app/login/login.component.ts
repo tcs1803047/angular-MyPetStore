@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   /** 5. 登入 */
   login() {
-    if (this.username === 'matt' && this.password === '123') {
+    if (this.username === 'tester01' && this.password === '12345678') {
       sessionStorage.setItem('user', this.username);
       this.isFail = false;
     } else {
