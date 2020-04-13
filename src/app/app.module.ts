@@ -15,11 +15,16 @@ import { BookComponent } from './book/book.component';
 import { GrosseryComponent } from './grossery/grossery.component';
 import { MatButtonModule } from '@angular/material';
 import { MessageListComponent } from './message-list/message-list.component';
+
+import {DemoMaterialModule} from './material-module';
+import { TopBar2Component } from './top-bar2/top-bar2.component';
+
 //
 @NgModule({
   imports:      [
     BrowserModule,
     FormsModule,
+    DemoMaterialModule,
     //ReactiveFormsModule,
     //
     RouterModule.forRoot([
@@ -30,6 +35,7 @@ import { MessageListComponent } from './message-list/message-list.component';
     ])
 
     ],
+  entryComponents: [LoginmenuComponent],    
   declarations: [
     AppComponent,
     HelloComponent, 
@@ -39,7 +45,8 @@ import { MessageListComponent } from './message-list/message-list.component';
     StoryComponent,
     BookComponent,
     GrosseryComponent,
-    MessageListComponent
+    MessageListComponent,
+    TopBar2Component
   ],
   bootstrap:    [ AppComponent ]
 })

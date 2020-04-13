@@ -1,0 +1,38 @@
+ 
+<a [routerLink]="['/']">
+
+  <h1>WanQol（ダミー）</h1>
+   
+</a>
+
+<button mat-button [matMenuTriggerFor]="story">STORY</button>
+<mat-menu #storymenu="matMenu">
+  <button mat-menu-item>SPECIAL</button>
+  <button mat-menu-item>HEART</button>
+  <button mat-menu-item>BODY</button>
+  <button mat-menu-item>LIFE</button>
+  <button mat-menu-item>SOCIETY</button>
+  <button mat-menu-item>ITEM</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu">BOOK</button>
+<mat-menu #bookmenu="matMenu">
+  <button mat-menu-item>MANNER</button>
+  <button mat-menu-item>HEALTH</button>
+  <button mat-menu-item>BREED</button>
+  <button mat-menu-item>GLOSSARY</button>
+</mat-menu>
+
+<a [routerLink]="['/grossary']" class="button fancy-button"><i class="material-icons">menu</i>GROSSARY</a>
+
+<button mat-button [matMenuTriggerFor]="menu">Sign in</button>
+<mat-menu #signinmenu="matMenu">
+  <button mat-menu-item>Sign in</button>
+  <button mat-menu-item>Sign up</button>
+</mat-menu>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
