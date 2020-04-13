@@ -9,6 +9,7 @@ import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { LoginComponent } from './login/login.component';
+import { LoginmenuComponent } from './loginmenu/loginmenu.component';
 //
 @NgModule({
   imports:      [
@@ -25,7 +26,8 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HelloComponent, 
     TopBarComponent,
-    LoginComponent
+    LoginComponent,
+    LoginmenuComponent
   ],
   bootstrap:    [ AppComponent ]
 })
