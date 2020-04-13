@@ -10,6 +10,11 @@ import { RouterModule } from '@angular/router';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { LoginComponent } from './login/login.component';
 import { LoginmenuComponent } from './loginmenu/loginmenu.component';
+import { StoryComponent } from './story/story.component';
+import { BookComponent } from './book/book.component';
+import { GrosseryComponent } from './grossery/grossery.component';
+import { MatButtonModule } from '@angular/material';
+import { MessageListComponent } from './message-list/message-list.component';
 //
 @NgModule({
   imports:      [
@@ -18,6 +23,9 @@ import { LoginmenuComponent } from './loginmenu/loginmenu.component';
     //ReactiveFormsModule,
     //
     RouterModule.forRoot([
+      { path: 'story', component: MessageListComponent },
+      { path: 'book', component: BookComponent },      
+      { path: 'grossery', component: GrosseryComponent },      
       { path: 'login', component: LoginComponent },
     ])
 
@@ -27,7 +35,11 @@ import { LoginmenuComponent } from './loginmenu/loginmenu.component';
     HelloComponent, 
     TopBarComponent,
     LoginComponent,
-    LoginmenuComponent
+    LoginmenuComponent,
+    StoryComponent,
+    BookComponent,
+    GrosseryComponent,
+    MessageListComponent
   ],
   bootstrap:    [ AppComponent ]
 })

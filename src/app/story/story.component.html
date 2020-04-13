@@ -1,0 +1,19 @@
+<!-- 登入前/登出後顯示 -->
+<div *ngIf="!isLogin()">
+  <div style="color:red;" *ngIf='isFail'>{{warnMessage}}</div><!-- 登入失敗時顯示 -->
+
+  <div>
+    <label>uaaaasername:<input type="text" name="username" [(ngModel)]="username"></label><br>
+    <label>password:<input type="password" name="password" [(ngModel)]="password"></label><br>
+    <button (click)=login()>Login</button>
+  </div>
+
+</div>
+
+<hr>
+
+<!-- 登入後顯示 -->
+<div *ngIf="isLogin()">
+  <h1>Hello {{username}}</h1>
+  <button (click)=logout()>Log out</button>
+</div>
